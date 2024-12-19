@@ -1,6 +1,8 @@
 # Collective-Intelligence-in-Humanitarian-Voluntary-Geographic-Information-ODECO-HOT-TM
 This repository contains Python and R notebooks for the analysis of data from the Humanitarian OpenStreetMap Team Tasking Manager (HOT-TM) API.
 
+* download_data.ipynb: this notebook explains step-by-step how the HOT-TM and Bunting Labs APIs were accessed for collecting data.
+
 * 0_Project_profiling.ipynb: this notebook describes the general attributes of the 746 analyzed projects: difficulty, priority, number of tasks, number of contributors, location of the projects and organizations.
 
 * 1_Contributor_profiling.ipynb: this notebook describes the attributes of the contributors of the HOT projects analyzed: completeness of attributes, mapping level and location according to reported country.
