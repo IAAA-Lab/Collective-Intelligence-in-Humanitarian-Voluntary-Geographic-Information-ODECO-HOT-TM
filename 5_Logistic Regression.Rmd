@@ -30,17 +30,9 @@ head(event_log_df)
 event_log_df$priority <- factor(event_log_df$priority)
 event_log_df$difficulty <- factor(event_log_df$difficulty)
 event_log_df$whomapped <- factor(event_log_df$whomapped)
-mylogit <- glm(invalidated ~ priority + difficulty + areamapped + group + whomapped + durationvalidationper, data = event_log_df, family = "binomial")
+mylogit <- glm(invalidated ~ priority + difficulty + areamapped + group + whomapped + durationvalidationper + mapper_location, data = event_log_df, family = "binomial")
 ```
 
 ```{r}
 summary(mylogit)
 ```
-# Execute logisic regression gmlss BI
-```{r}
-library(gamlss)
-model <- gamlss(invalidated ~ priority + difficulty + areamapped + group + whomapped + durationvalidationper, data = event_log_df, family = BI())
-summary(model)
-```
-
-

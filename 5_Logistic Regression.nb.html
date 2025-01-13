@@ -1779,10 +1779,17 @@ library(ggplot2)</code></pre>
 <h1>Read event data</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZXZlbnRfbG9nX2RmIDwtIHJlYWQuY3N2KFwicmVncmVzc2lvbi5jc3ZcIiwgc3RyaW5nc0FzRmFjdG9ycyA9IEZBTFNFLCBzZXAgPSBcIixcIilcblxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZXZlbnRfbG9nX2RmIDwtIHJlYWQuY3N2KFwicmVncmVzc2lvbi5jc3ZcIiwgc3RyaW5nc0FzRmFjdG9ycyA9IEZBTFNFLCBzZXAgPSBcIixcIilcbmhlYWQoZXZlbnRfbG9nX2RmKVxuYGBgIn0= -->
 <pre class="r"><code>event_log_df &lt;- read.csv(&quot;regression.csv&quot;, stringsAsFactors = FALSE, sep = &quot;,&quot;)
-</code></pre>
+head(event_log_df)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6OCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNiDDlyA4XSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJndHlpVERtaXVCaVlHQmdabUJoWm1aZ1pnVXlHVmhEUTl4MExSZ1lXSmlBSEVZR0ZnWk9FRjBCVkNRTVpIQUFzUUFRczBFbE9JMzBGSHhkWFR4RGZXa2pnR29idTZHZWdxdGpjQ1ExdVF3TWZHQWIwSUNEeWdldWtxVjVheDAwdFEvZEZKc243NkIyNytvTTkrSWVCN1hVT2R2WkJQT0FTbml4NkdORVlxUExNNktwUmZZWnQ3R2VncU5MbUtPZnM2c0xyWVdnUG5aUTNuZnNuWUNmcTRPVmEwNWw3Wlc1RHVINkczc1oxRGdkQXNWODVoeThHZXRnc3FIWDlqVEhGUWZwdFVzbEhTVHVvcm1ZejBndk9ERTNOVDQ1dnpTdnBLZ1NyeWlub1Y2b243ZWZmN2dmTGdIaVRFTk5sS3g1UUxsaXFMTTRvSUljQlVXWitVV1pKVEFqdUZJeTA5SXlrMHR6RUNLSlJhbUp1WWtGQmFrcHNOREp6Q3RMek1sTVNTeUJDN0dtRitXWEZzQmNXNTZSajZKQk5LVzBLTEVrTXgrbURjZ3FTQzJDU3ZLRGxSYkY1K1FuZzJYUVhNMVpsRit1QjNNNUtJa3dOVUNTQXh1Njk1SnpFb3RoM21PRWV5ZXhKRkV2clFpb0g4ajdoNmFGUGI4QVpDTlFFNU13TlBFaGEyWXNRaFBnTDgwRHVTUkZOem1qTkM5YjF3aE5tcmtnTHgxa0p6VHRNa0lkekFnMUdzYm1nTGlDNlQ5YUNtRkx6VXZQekV1RmVTY25NU2sxQjJaeVNtb1pMSTZCNFFFT0RqMWd6T1dWd1B3SkZDM1dLOGt2U1lScDRVck96NEdKZ0gzTzhBOEFUVlVSajhFRUFBQT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["priority"],"name":[1],"type":["chr"],"align":["left"]},{"label":["difficulty"],"name":[2],"type":["chr"],"align":["left"]},{"label":["areamapped"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["invalidated"],"name":[4],"type":["int"],"align":["right"]},{"label":["group"],"name":[5],"type":["int"],"align":["right"]},{"label":["whomapped"],"name":[6],"type":["chr"],"align":["left"]},{"label":["durationvalidationper"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["mapper_location"],"name":[8],"type":["chr"],"align":["left"]}],"data":[{"1":"2. MEDIUM","2":"1. EASY","3":"0.00000","4":"0","5":"0","6":"3. ADVANCED","7":"9.872611","8":"2.Same_country","_rn_":"1"},{"1":"2. MEDIUM","2":"1. EASY","3":"0.00000","4":"0","5":"0","6":"3. ADVANCED","7":"26.271186","8":"2.Same_country","_rn_":"2"},{"1":"2. MEDIUM","2":"1. EASY","3":"10.46883","4":"0","5":"1","6":"3. ADVANCED","7":"92.745212","8":"1.UNKNOWN","_rn_":"3"},{"1":"2. MEDIUM","2":"1. EASY","3":"12.58547","4":"1","5":"0","6":"3. ADVANCED","7":"68.348426","8":"1.UNKNOWN","_rn_":"4"},{"1":"2. MEDIUM","2":"1. EASY","3":"11.43522","4":"0","5":"0","6":"3. ADVANCED","7":"20.689655","8":"2.Same_country","_rn_":"5"},{"1":"2. MEDIUM","2":"1. EASY","3":"11.19846","4":"0","5":"0","6":"3. ADVANCED","7":"6.919575","8":"2.Same_country","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10],"total":[8]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -1790,11 +1797,11 @@ library(ggplot2)</code></pre>
 <h1>Execute logisic regression gml binomial</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZXZlbnRfbG9nX2RmJHByaW9yaXR5IDwtIGZhY3RvcihldmVudF9sb2dfZGYkcHJpb3JpdHkpXG5ldmVudF9sb2dfZGYkZGlmZmljdWx0eSA8LSBmYWN0b3IoZXZlbnRfbG9nX2RmJGRpZmZpY3VsdHkpXG5ldmVudF9sb2dfZGYkd2hvbWFwcGVkIDwtIGZhY3RvcihldmVudF9sb2dfZGYkd2hvbWFwcGVkKVxubXlsb2dpdCA8LSBnbG0oaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIsIGRhdGEgPSBldmVudF9sb2dfZGYsIGZhbWlseSA9IFwiYmlub21pYWxcIilcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZXZlbnRfbG9nX2RmJHByaW9yaXR5IDwtIGZhY3RvcihldmVudF9sb2dfZGYkcHJpb3JpdHkpXG5ldmVudF9sb2dfZGYkZGlmZmljdWx0eSA8LSBmYWN0b3IoZXZlbnRfbG9nX2RmJGRpZmZpY3VsdHkpXG5ldmVudF9sb2dfZGYkd2hvbWFwcGVkIDwtIGZhY3RvcihldmVudF9sb2dfZGYkd2hvbWFwcGVkKVxubXlsb2dpdCA8LSBnbG0oaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIgKyBtYXBwZXJfbG9jYXRpb24sIGRhdGEgPSBldmVudF9sb2dfZGYsIGZhbWlseSA9IFwiYmlub21pYWxcIilcbmBgYCJ9 -->
 <pre class="r"><code>event_log_df$priority &lt;- factor(event_log_df$priority)
 event_log_df$difficulty &lt;- factor(event_log_df$difficulty)
 event_log_df$whomapped &lt;- factor(event_log_df$whomapped)
-mylogit &lt;- glm(invalidated ~ priority + difficulty + areamapped + group + whomapped + durationvalidationper, data = event_log_df, family = &quot;binomial&quot;)</code></pre>
+mylogit &lt;- glm(invalidated ~ priority + difficulty + areamapped + group + whomapped + durationvalidationper + mapper_location, data = event_log_df, family = &quot;binomial&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1803,34 +1810,37 @@ mylogit &lt;- glm(invalidated ~ priority + difficulty + areamapped + group + who
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShteWxvZ2l0KVxuYGBgIn0= -->
 <pre class="r"><code>summary(mylogit)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuZ2xtKGZvcm11bGEgPSBpbnZhbGlkYXRlZCB+IHByaW9yaXR5ICsgZGlmZmljdWx0eSArIGFyZWFtYXBwZWQgKyBcbiAgICBncm91cCArIHdob21hcHBlZCArIGR1cmF0aW9udmFsaWRhdGlvbnBlciwgZmFtaWx5ID0gXCJiaW5vbWlhbFwiLCBcbiAgICBkYXRhID0gZXZlbnRfbG9nX2RmKVxuXG5Db2VmZmljaWVudHM6XG4gICAgICAgICAgICAgICAgICAgICAgICAgICBFc3RpbWF0ZSBTdGQuIEVycm9yIHogdmFsdWUgUHIoPnx6fCkgICAgXG4oSW50ZXJjZXB0KSAgICAgICAgICAgICAgLTIuMzY0ODU2NiAgMC4wMjY4ODQ1IC04Ny45NjMgICA8MmUtMTYgKioqXG5wcmlvcml0eTIuIE1FRElVTSAgICAgICAgIDAuMjMwNjAyNCAgMC4wMjQ0Njg5ICAgOS40MjQgICA8MmUtMTYgKioqXG5wcmlvcml0eTMuIEhJR0ggICAgICAgICAgIDAuNDQ1MTAyNiAgMC4wMjkxMTg0ICAxNS4yODYgICA8MmUtMTYgKioqXG5wcmlvcml0eTQuIFVSR0VOVCAgICAgICAgIDEuMTQwNTQyNyAgMC4wMjg1ODc2ICAzOS44OTYgICA8MmUtMTYgKioqXG5kaWZmaWN1bHR5Mi4gTU9ERVJBVEUgICAgIDAuNzE4NjgzMiAgMC4wMjM3MDc2ICAzMC4zMTQgICA8MmUtMTYgKioqXG5kaWZmaWN1bHR5My4gQ0hBTExFTkdJTkcgIDEuMzgzNDk3MSAgMC4xMDQxMDgyICAxMy4yODkgICA8MmUtMTYgKioqXG5hcmVhbWFwcGVkICAgICAgICAgICAgICAgIDAuMDU3MDY0MSAgMC4wMDIzNzE4ICAyNC4wNTkgICA8MmUtMTYgKioqXG5ncm91cCAgICAgICAgICAgICAgICAgICAgIDAuNDM2ODc5MCAgMC4wMjAwMDcxICAyMS44MzYgICA8MmUtMTYgKioqXG53aG9tYXBwZWQyLiBJTlRFUk1FRElBVEUgLTAuNTY0MjEzNSAgMC4wMzk2ODMwIC0xNC4yMTggICA8MmUtMTYgKioqXG53aG9tYXBwZWQzLiBBRFZBTkNFRCAgICAgLTEuMTU0NjYwOSAgMC4wMjMwMzIzIC01MC4xMzIgICA8MmUtMTYgKioqXG5kdXJhdGlvbnZhbGlkYXRpb25wZXIgICAgLTAuMDI4NTIxMiAgMC4wMDAzODI4IC03NC41MTMgICA8MmUtMTYgKioqXG4tLS1cblNpZ25pZi4gY29kZXM6ICAwIOKAmCoqKuKAmSAwLjAwMSDigJgqKuKAmSAwLjAxIOKAmCrigJkgMC4wNSDigJgu4oCZIDAuMSDigJgg4oCZIDFcblxuKERpc3BlcnNpb24gcGFyYW1ldGVyIGZvciBiaW5vbWlhbCBmYW1pbHkgdGFrZW4gdG8gYmUgMSlcblxuICAgIE51bGwgZGV2aWFuY2U6IDEwMzI5MiAgb24gMjgxNjYzICBkZWdyZWVzIG9mIGZyZWVkb21cblJlc2lkdWFsIGRldmlhbmNlOiAgODU4OTUgIG9uIDI4MTY1MyAgZGVncmVlcyBvZiBmcmVlZG9tXG5BSUM6IDg1OTE3XG5cbk51bWJlciBvZiBGaXNoZXIgU2NvcmluZyBpdGVyYXRpb25zOiA3XG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuZ2xtKGZvcm11bGEgPSBpbnZhbGlkYXRlZCB+IHByaW9yaXR5ICsgZGlmZmljdWx0eSArIGFyZWFtYXBwZWQgKyBcbiAgICBncm91cCArIHdob21hcHBlZCArIGR1cmF0aW9udmFsaWRhdGlvbnBlciArIG1hcHBlcl9sb2NhdGlvbiwgXG4gICAgZmFtaWx5ID0gXCJiaW5vbWlhbFwiLCBkYXRhID0gZXZlbnRfbG9nX2RmKVxuXG5Db2VmZmljaWVudHM6XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBFc3RpbWF0ZSBTdGQuIEVycm9yIHogdmFsdWUgUHIoPnx6fCkgICAgXG4oSW50ZXJjZXB0KSAgICAgICAgICAgICAgICAgICAgLTIuMzAzNjA1MCAgMC4wMjc2ODc3IC04My4yMDAgIDwgMmUtMTYgKioqXG5wcmlvcml0eTIuIE1FRElVTSAgICAgICAgICAgICAgIDAuMjA3NDkyNSAgMC4wMjQ3ODA0ICAgOC4zNzMgIDwgMmUtMTYgKioqXG5wcmlvcml0eTMuIEhJR0ggICAgICAgICAgICAgICAgIDAuNDU1NjcyNyAgMC4wMjk0NDI0ICAxNS40NzcgIDwgMmUtMTYgKioqXG5wcmlvcml0eTQuIFVSR0VOVCAgICAgICAgICAgICAgIDEuMTY0NzkxOSAgMC4wMjg3NzE5ICA0MC40ODQgIDwgMmUtMTYgKioqXG5kaWZmaWN1bHR5Mi4gTU9ERVJBVEUgICAgICAgICAgIDAuNjU1MzYzMyAgMC4wMjM4NTcyICAyNy40NzAgIDwgMmUtMTYgKioqXG5kaWZmaWN1bHR5My4gQ0hBTExFTkdJTkcgICAgICAgIDEuMjk2OTU3NyAgMC4xMDQ3MjkwICAxMi4zODQgIDwgMmUtMTYgKioqXG5hcmVhbWFwcGVkICAgICAgICAgICAgICAgICAgICAgIDAuMDU2NjkyNyAgMC4wMDIzOTA1ICAyMy43MTUgIDwgMmUtMTYgKioqXG5ncm91cCAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNDM2OTE5NCAgMC4wMjAxMTIzICAyMS43MjQgIDwgMmUtMTYgKioqXG53aG9tYXBwZWQyLiBJTlRFUk1FRElBVEUgICAgICAgLTAuNTg2MDY5NSAgMC4wNDAzNzQ5IC0xNC41MTYgIDwgMmUtMTYgKioqXG53aG9tYXBwZWQzLiBBRFZBTkNFRCAgICAgICAgICAgLTEuMTUzNDY5MyAgMC4wMjQ4MjY3IC00Ni40NjEgIDwgMmUtMTYgKioqXG5kdXJhdGlvbnZhbGlkYXRpb25wZXIgICAgICAgICAgLTAuMDI4Mzg1NiAgMC4wMDAzODMxIC03NC4xMDAgIDwgMmUtMTYgKioqXG5tYXBwZXJfbG9jYXRpb24yLlNhbWVfY291bnRyeSAgIDAuMjMwODMzNiAgMC4wMzE3NjczICAgNy4yNjYgMy42OWUtMTMgKioqXG5tYXBwZXJfbG9jYXRpb24zLlNhbWVfaHViICAgICAgIDAuMzUyNjk5OCAgMC4wMzM5MjUzICAxMC4zOTYgIDwgMmUtMTYgKioqXG5tYXBwZXJfbG9jYXRpb240LkRpZmZlcmVudF9odWIgLTAuMzY4OTY1OSAgMC4wMjQ2NTY5IC0xNC45NjQgIDwgMmUtMTYgKioqXG4tLS1cblNpZ25pZi4gY29kZXM6ICAwIOKAmCoqKuKAmSAwLjAwMSDigJgqKuKAmSAwLjAxIOKAmCrigJkgMC4wNSDigJgu4oCZIDAuMSDigJgg4oCZIDFcblxuKERpc3BlcnNpb24gcGFyYW1ldGVyIGZvciBiaW5vbWlhbCBmYW1pbHkgdGFrZW4gdG8gYmUgMSlcblxuICAgIE51bGwgZGV2aWFuY2U6IDEwMzI5MSAgb24gMjgxNjUxICBkZWdyZWVzIG9mIGZyZWVkb21cblJlc2lkdWFsIGRldmlhbmNlOiAgODUzMDcgIG9uIDI4MTYzOCAgZGVncmVlcyBvZiBmcmVlZG9tXG5BSUM6IDg1MzM1XG5cbk51bWJlciBvZiBGaXNoZXIgU2NvcmluZyBpdGVyYXRpb25zOiA3XG4ifQ== -->
 <pre><code>
 Call:
 glm(formula = invalidated ~ priority + difficulty + areamapped + 
-    group + whomapped + durationvalidationper, family = &quot;binomial&quot;, 
-    data = event_log_df)
+    group + whomapped + durationvalidationper + mapper_location, 
+    family = &quot;binomial&quot;, data = event_log_df)
 
 Coefficients:
-                           Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)              -2.3648566  0.0268845 -87.963   &lt;2e-16 ***
-priority2. MEDIUM         0.2306024  0.0244689   9.424   &lt;2e-16 ***
-priority3. HIGH           0.4451026  0.0291184  15.286   &lt;2e-16 ***
-priority4. URGENT         1.1405427  0.0285876  39.896   &lt;2e-16 ***
-difficulty2. MODERATE     0.7186832  0.0237076  30.314   &lt;2e-16 ***
-difficulty3. CHALLENGING  1.3834971  0.1041082  13.289   &lt;2e-16 ***
-areamapped                0.0570641  0.0023718  24.059   &lt;2e-16 ***
-group                     0.4368790  0.0200071  21.836   &lt;2e-16 ***
-whomapped2. INTERMEDIATE -0.5642135  0.0396830 -14.218   &lt;2e-16 ***
-whomapped3. ADVANCED     -1.1546609  0.0230323 -50.132   &lt;2e-16 ***
-durationvalidationper    -0.0285212  0.0003828 -74.513   &lt;2e-16 ***
+                                 Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                    -2.3036050  0.0276877 -83.200  &lt; 2e-16 ***
+priority2. MEDIUM               0.2074925  0.0247804   8.373  &lt; 2e-16 ***
+priority3. HIGH                 0.4556727  0.0294424  15.477  &lt; 2e-16 ***
+priority4. URGENT               1.1647919  0.0287719  40.484  &lt; 2e-16 ***
+difficulty2. MODERATE           0.6553633  0.0238572  27.470  &lt; 2e-16 ***
+difficulty3. CHALLENGING        1.2969577  0.1047290  12.384  &lt; 2e-16 ***
+areamapped                      0.0566927  0.0023905  23.715  &lt; 2e-16 ***
+group                           0.4369194  0.0201123  21.724  &lt; 2e-16 ***
+whomapped2. INTERMEDIATE       -0.5860695  0.0403749 -14.516  &lt; 2e-16 ***
+whomapped3. ADVANCED           -1.1534693  0.0248267 -46.461  &lt; 2e-16 ***
+durationvalidationper          -0.0283856  0.0003831 -74.100  &lt; 2e-16 ***
+mapper_location2.Same_country   0.2308336  0.0317673   7.266 3.69e-13 ***
+mapper_location3.Same_hub       0.3526998  0.0339253  10.396  &lt; 2e-16 ***
+mapper_location4.Different_hub -0.3689659  0.0246569 -14.964  &lt; 2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 (Dispersion parameter for binomial family taken to be 1)
 
-    Null deviance: 103292  on 281663  degrees of freedom
-Residual deviance:  85895  on 281653  degrees of freedom
-AIC: 85917
+    Null deviance: 103291  on 281651  degrees of freedom
+Residual deviance:  85307  on 281638  degrees of freedom
+AIC: 85335
 
 Number of Fisher Scoring iterations: 7</code></pre>
 <!-- rnb-output-end -->
@@ -1841,60 +1851,122 @@ Number of Fisher Scoring iterations: 7</code></pre>
 <h1>Execute logisic regression gmlss BI</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnYW1sc3MpXG5tb2RlbCA8LSBnYW1sc3MoaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIsIGRhdGEgPSBldmVudF9sb2dfZGYsIGZhbWlseSA9IEJJKCkpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnYW1sc3MpXG5tb2RlbCA8LSBnYW1sc3MoaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIrIG1hcHBlcl9sb2NhdGlvbiwgZGF0YSA9IGV2ZW50X2xvZ19kZiwgZmFtaWx5ID0gQkkoKSlcbmBgYCJ9 -->
 <pre class="r"><code>library(gamlss)
-model &lt;- gamlss(invalidated ~ priority + difficulty + areamapped + group + whomapped + durationvalidationper, data = event_log_df, family = BI())</code></pre>
+model &lt;- gamlss(invalidated ~ priority + difficulty + areamapped + group + whomapped + durationvalidationper+ mapper_location, data = event_log_df, family = BI())</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiR0FNTFNTLVJTIGl0ZXJhdGlvbiAxOiBHbG9iYWwgRGV2aWFuY2UgPSA4NTg5NS4yOCBcbkdBTUxTUy1SUyBpdGVyYXRpb24gMjogR2xvYmFsIERldmlhbmNlID0gODU4OTUuMjggXG4ifQ== -->
-<pre><code>GAMLSS-RS iteration 1: Global Deviance = 85895.28 
-GAMLSS-RS iteration 2: Global Deviance = 85895.28 </code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiR0FNTFNTLVJTIGl0ZXJhdGlvbiAxOiBHbG9iYWwgRGV2aWFuY2UgPSA4NTMwNy4zNCBcbkdBTUxTUy1SUyBpdGVyYXRpb24gMjogR2xvYmFsIERldmlhbmNlID0gODUzMDcuMzQgXG4ifQ== -->
+<pre><code>GAMLSS-RS iteration 1: Global Deviance = 85307.34 
+GAMLSS-RS iteration 2: Global Deviance = 85307.34 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShtb2RlbClcbmBgYCJ9 -->
 <pre class="r"><code>summary(model)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqXG5GYW1pbHk6ICBjKFwiQklcIiwgXCJCaW5vbWlhbFwiKSBcblxuQ2FsbDogIGdhbWxzcyhmb3JtdWxhID0gaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyAgICAgIGFyZWFtYXBwZWQgKyBncm91cCArIHdob21hcHBlZCArIGR1cmF0aW9udmFsaWRhdGlvbnBlciwgICAgICBmYW1pbHkgPSBCSSgpLCBkYXRhID0gZXZlbnRfbG9nX2RmKSBcblxuRml0dGluZyBtZXRob2Q6IFJTKCkgXG5cbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuTXUgbGluayBmdW5jdGlvbjogIGxvZ2l0XG5NdSBDb2VmZmljaWVudHM6XG4gICAgICAgICAgICAgICAgICAgICAgICAgICBFc3RpbWF0ZSBTdGQuIEVycm9yIHQgdmFsdWUgUHIoPnx0fCkgICAgXG4oSW50ZXJjZXB0KSAgICAgICAgICAgICAgLTIuMzY0ODU2NiAgMC4wMjY4ODIwIC04Ny45NzIgICA8MmUtMTYgKioqXG5wcmlvcml0eTIuIE1FRElVTSAgICAgICAgIDAuMjMwNjAyNCAgMC4wMjQ0Njg5ICAgOS40MjQgICA8MmUtMTYgKioqXG5wcmlvcml0eTMuIEhJR0ggICAgICAgICAgIDAuNDQ1MTAyNiAgMC4wMjkxMTg1ICAxNS4yODYgICA8MmUtMTYgKioqXG5wcmlvcml0eTQuIFVSR0VOVCAgICAgICAgIDEuMTQwNTQyNyAgMC4wMjg1ODc3ICAzOS44OTYgICA8MmUtMTYgKioqXG5kaWZmaWN1bHR5Mi4gTU9ERVJBVEUgICAgIDAuNzE4NjgzMiAgMC4wMjM3MDc3ICAzMC4zMTQgICA8MmUtMTYgKioqXG5kaWZmaWN1bHR5My4gQ0hBTExFTkdJTkcgIDEuMzgzNDk3MSAgMC4xMDQxMDgyICAxMy4yODkgICA8MmUtMTYgKioqXG5hcmVhbWFwcGVkICAgICAgICAgICAgICAgIDAuMDU3MDY0MSAgMC4wMDIzNzE4ICAyNC4wNTkgICA8MmUtMTYgKioqXG5ncm91cCAgICAgICAgICAgICAgICAgICAgIDAuNDM2ODc5MCAgMC4wMjAwMDcxICAyMS44MzYgICA8MmUtMTYgKioqXG53aG9tYXBwZWQyLiBJTlRFUk1FRElBVEUgLTAuNTY0MjEzNSAgMC4wMzk2ODMwIC0xNC4yMTggICA8MmUtMTYgKioqXG53aG9tYXBwZWQzLiBBRFZBTkNFRCAgICAgLTEuMTU0NjYwOSAgMC4wMjMwMzIyIC01MC4xMzIgICA8MmUtMTYgKioqXG5kdXJhdGlvbnZhbGlkYXRpb25wZXIgICAgLTAuMDI4NTIxMiAgMC4wMDAzODI0IC03NC41ODggICA8MmUtMTYgKioqXG4tLS1cblNpZ25pZi4gY29kZXM6ICAwIOKAmCoqKuKAmSAwLjAwMSDigJgqKuKAmSAwLjAxIOKAmCrigJkgMC4wNSDigJgu4oCZIDAuMSDigJgg4oCZIDFcblxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5Oby4gb2Ygb2JzZXJ2YXRpb25zIGluIHRoZSBmaXQ6ICAyODE2NjQgXG5EZWdyZWVzIG9mIEZyZWVkb20gZm9yIHRoZSBmaXQ6ICAxMVxuICAgICAgUmVzaWR1YWwgRGVnLiBvZiBGcmVlZG9tOiAgMjgxNjUzIFxuICAgICAgICAgICAgICAgICAgICAgIGF0IGN5Y2xlOiAgMiBcbiBcbkdsb2JhbCBEZXZpYW5jZTogICAgIDg1ODk1LjI4IFxuICAgICAgICAgICAgQUlDOiAgICAgODU5MTcuMjggXG4gICAgICAgICAgICBTQkM6ICAgICA4NjAzMy4zMSBcbioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqXG5GYW1pbHk6ICBjKFwiQklcIiwgXCJCaW5vbWlhbFwiKSBcblxuQ2FsbDogIGdhbWxzcyhmb3JtdWxhID0gaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyAgICAgIGFyZWFtYXBwZWQgKyBncm91cCArIHdob21hcHBlZCArIGR1cmF0aW9udmFsaWRhdGlvbnBlciArICBcbiAgICBtYXBwZXJfbG9jYXRpb24sIGZhbWlseSA9IEJJKCksIGRhdGEgPSBldmVudF9sb2dfZGYpIFxuXG5GaXR0aW5nIG1ldGhvZDogUlMoKSBcblxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5NdSBsaW5rIGZ1bmN0aW9uOiAgbG9naXRcbk11IENvZWZmaWNpZW50czpcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVzdGltYXRlIFN0ZC4gRXJyb3IgdCB2YWx1ZSBQcig+fHR8KSAgICBcbihJbnRlcmNlcHQpICAgICAgICAgICAgICAgICAgICAtMi4zMDM2MDUwICAwLjAyNzY4NTIgLTgzLjIwNyAgPCAyZS0xNiAqKipcbnByaW9yaXR5Mi4gTUVESVVNICAgICAgICAgICAgICAgMC4yMDc0OTI1ICAwLjAyNDc4MDQgICA4LjM3MyAgPCAyZS0xNiAqKipcbnByaW9yaXR5My4gSElHSCAgICAgICAgICAgICAgICAgMC40NTU2NzI3ICAwLjAyOTQ0MjQgIDE1LjQ3NyAgPCAyZS0xNiAqKipcbnByaW9yaXR5NC4gVVJHRU5UICAgICAgICAgICAgICAgMS4xNjQ3OTE5ICAwLjAyODc3MjAgIDQwLjQ4NCAgPCAyZS0xNiAqKipcbmRpZmZpY3VsdHkyLiBNT0RFUkFURSAgICAgICAgICAgMC42NTUzNjMzICAwLjAyMzg1NzMgIDI3LjQ3MCAgPCAyZS0xNiAqKipcbmRpZmZpY3VsdHkzLiBDSEFMTEVOR0lORyAgICAgICAgMS4yOTY5NTc3ICAwLjEwNDcyOTAgIDEyLjM4NCAgPCAyZS0xNiAqKipcbmFyZWFtYXBwZWQgICAgICAgICAgICAgICAgICAgICAgMC4wNTY2OTI3ICAwLjAwMjM5MDUgIDIzLjcxNSAgPCAyZS0xNiAqKipcbmdyb3VwICAgICAgICAgICAgICAgICAgICAgICAgICAgMC40MzY5MTk0ICAwLjAyMDExMjIgIDIxLjcyNCAgPCAyZS0xNiAqKipcbndob21hcHBlZDIuIElOVEVSTUVESUFURSAgICAgICAtMC41ODYwNjk1ICAwLjA0MDM3NDkgLTE0LjUxNiAgPCAyZS0xNiAqKipcbndob21hcHBlZDMuIEFEVkFOQ0VEICAgICAgICAgICAtMS4xNTM0NjkzICAwLjAyNDgyNjcgLTQ2LjQ2MSAgPCAyZS0xNiAqKipcbmR1cmF0aW9udmFsaWRhdGlvbnBlciAgICAgICAgICAtMC4wMjgzODU2ICAwLjAwMDM4MjcgLTc0LjE3NSAgPCAyZS0xNiAqKipcbm1hcHBlcl9sb2NhdGlvbjIuU2FtZV9jb3VudHJ5ICAgMC4yMzA4MzM2ICAwLjAzMTc2NzMgICA3LjI2NiAgMy43ZS0xMyAqKipcbm1hcHBlcl9sb2NhdGlvbjMuU2FtZV9odWIgICAgICAgMC4zNTI2OTk4ICAwLjAzMzkyNTMgIDEwLjM5NiAgPCAyZS0xNiAqKipcbm1hcHBlcl9sb2NhdGlvbjQuRGlmZmVyZW50X2h1YiAtMC4zNjg5NjU5ICAwLjAyNDY1NjkgLTE0Ljk2NCAgPCAyZS0xNiAqKipcbi0tLVxuU2lnbmlmLiBjb2RlczogIDAg4oCYKioq4oCZIDAuMDAxIOKAmCoq4oCZIDAuMDEg4oCYKuKAmSAwLjA1IOKAmC7igJkgMC4xIOKAmCDigJkgMVxuXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbk5vLiBvZiBvYnNlcnZhdGlvbnMgaW4gdGhlIGZpdDogIDI4MTY1MiBcbkRlZ3JlZXMgb2YgRnJlZWRvbSBmb3IgdGhlIGZpdDogIDE0XG4gICAgICBSZXNpZHVhbCBEZWcuIG9mIEZyZWVkb206ICAyODE2MzggXG4gICAgICAgICAgICAgICAgICAgICAgYXQgY3ljbGU6ICAyIFxuIFxuR2xvYmFsIERldmlhbmNlOiAgICAgODUzMDcuMzQgXG4gICAgICAgICAgICBBSUM6ICAgICA4NTMzNS4zNCBcbiAgICAgICAgICAgIFNCQzogICAgIDg1NDgzLjAyIFxuKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqXG4ifQ== -->
 <pre><code>******************************************************************
 Family:  c(&quot;BI&quot;, &quot;Binomial&quot;) 
 
-Call:  gamlss(formula = invalidated ~ priority + difficulty +      areamapped + group + whomapped + durationvalidationper,      family = BI(), data = event_log_df) 
+Call:  gamlss(formula = invalidated ~ priority + difficulty +      areamapped + group + whomapped + durationvalidationper +  
+    mapper_location, family = BI(), data = event_log_df) 
 
 Fitting method: RS() 
 
 ------------------------------------------------------------------
 Mu link function:  logit
 Mu Coefficients:
-                           Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)              -2.3648566  0.0268820 -87.972   &lt;2e-16 ***
-priority2. MEDIUM         0.2306024  0.0244689   9.424   &lt;2e-16 ***
-priority3. HIGH           0.4451026  0.0291185  15.286   &lt;2e-16 ***
-priority4. URGENT         1.1405427  0.0285877  39.896   &lt;2e-16 ***
-difficulty2. MODERATE     0.7186832  0.0237077  30.314   &lt;2e-16 ***
-difficulty3. CHALLENGING  1.3834971  0.1041082  13.289   &lt;2e-16 ***
-areamapped                0.0570641  0.0023718  24.059   &lt;2e-16 ***
-group                     0.4368790  0.0200071  21.836   &lt;2e-16 ***
-whomapped2. INTERMEDIATE -0.5642135  0.0396830 -14.218   &lt;2e-16 ***
-whomapped3. ADVANCED     -1.1546609  0.0230322 -50.132   &lt;2e-16 ***
-durationvalidationper    -0.0285212  0.0003824 -74.588   &lt;2e-16 ***
+                                 Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)                    -2.3036050  0.0276852 -83.207  &lt; 2e-16 ***
+priority2. MEDIUM               0.2074925  0.0247804   8.373  &lt; 2e-16 ***
+priority3. HIGH                 0.4556727  0.0294424  15.477  &lt; 2e-16 ***
+priority4. URGENT               1.1647919  0.0287720  40.484  &lt; 2e-16 ***
+difficulty2. MODERATE           0.6553633  0.0238573  27.470  &lt; 2e-16 ***
+difficulty3. CHALLENGING        1.2969577  0.1047290  12.384  &lt; 2e-16 ***
+areamapped                      0.0566927  0.0023905  23.715  &lt; 2e-16 ***
+group                           0.4369194  0.0201122  21.724  &lt; 2e-16 ***
+whomapped2. INTERMEDIATE       -0.5860695  0.0403749 -14.516  &lt; 2e-16 ***
+whomapped3. ADVANCED           -1.1534693  0.0248267 -46.461  &lt; 2e-16 ***
+durationvalidationper          -0.0283856  0.0003827 -74.175  &lt; 2e-16 ***
+mapper_location2.Same_country   0.2308336  0.0317673   7.266  3.7e-13 ***
+mapper_location3.Same_hub       0.3526998  0.0339253  10.396  &lt; 2e-16 ***
+mapper_location4.Different_hub -0.3689659  0.0246569 -14.964  &lt; 2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 ------------------------------------------------------------------
-No. of observations in the fit:  281664 
-Degrees of Freedom for the fit:  11
-      Residual Deg. of Freedom:  281653 
+No. of observations in the fit:  281652 
+Degrees of Freedom for the fit:  14
+      Residual Deg. of Freedom:  281638 
                       at cycle:  2 
  
-Global Deviance:     85895.28 
-            AIC:     85917.28 
-            SBC:     86033.31 
+Global Deviance:     85307.34 
+            AIC:     85335.34 
+            SBC:     85483.02 
 ******************************************************************</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="execute-logisic-regression-gml-binomial-1" class="section level1">
+<h1>Execute logisic regression gml binomial</h1>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZXZlbnRfbG9nX2RmJHByaW9yaXR5IDwtIGZhY3RvcihldmVudF9sb2dfZGYkcHJpb3JpdHkpXG5ldmVudF9sb2dfZGYkZGlmZmljdWx0eSA8LSBmYWN0b3IoZXZlbnRfbG9nX2RmJGRpZmZpY3VsdHkpXG5ldmVudF9sb2dfZGYkd2hvbWFwcGVkIDwtIGZhY3RvcihldmVudF9sb2dfZGYkd2hvbWFwcGVkKVxubXlsb2dpdCA8LSBnbG0oaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIgKyBtYXBwZXJfbG9jYXRpb24gKyBtYXBwZXJfbG9jYXRpb24qd2hvbWFwcGVkLCBkYXRhID0gZXZlbnRfbG9nX2RmLCBmYW1pbHkgPSBcImJpbm9taWFsXCIpXG5gYGAifQ== -->
+<pre class="r"><code>event_log_df$priority &lt;- factor(event_log_df$priority)
+event_log_df$difficulty &lt;- factor(event_log_df$difficulty)
+event_log_df$whomapped &lt;- factor(event_log_df$whomapped)
+mylogit &lt;- glm(invalidated ~ priority + difficulty + areamapped + group + whomapped + durationvalidationper + mapper_location + mapper_location*whomapped, data = event_log_df, family = &quot;binomial&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShteWxvZ2l0KVxuYGBgIn0= -->
+<pre class="r"><code>summary(mylogit)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuZ2xtKGZvcm11bGEgPSBpbnZhbGlkYXRlZCB+IHByaW9yaXR5ICsgZGlmZmljdWx0eSArIGFyZWFtYXBwZWQgKyBcbiAgICBncm91cCArIHdob21hcHBlZCArIGR1cmF0aW9udmFsaWRhdGlvbnBlciArIG1hcHBlcl9sb2NhdGlvbiArIFxuICAgIG1hcHBlcl9sb2NhdGlvbiAqIHdob21hcHBlZCwgZmFtaWx5ID0gXCJiaW5vbWlhbFwiLCBkYXRhID0gZXZlbnRfbG9nX2RmKVxuXG5Db2VmZmljaWVudHM6XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRXN0aW1hdGUgU3RkLiBFcnJvciB6IHZhbHVlIFByKD58enwpICAgIFxuKEludGVyY2VwdCkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMi4zNDM0NzgyICAwLjAyODMzMzQgLTgyLjcxMSAgPCAyZS0xNiAqKipcbnByaW9yaXR5Mi4gTUVESVVNICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMjA2NDEyMSAgMC4wMjQ4MDc2ICAgOC4zMjEgIDwgMmUtMTYgKioqXG5wcmlvcml0eTMuIEhJR0ggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjQ0NDMzODYgIDAuMDI5NjA4MCAgMTUuMDA3ICA8IDJlLTE2ICoqKlxucHJpb3JpdHk0LiBVUkdFTlQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMS4xNTcyNzc0ICAwLjAyODkwNDggIDQwLjAzNyAgPCAyZS0xNiAqKipcbmRpZmZpY3VsdHkyLiBNT0RFUkFURSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNjUzNzEzOSAgMC4wMjM4NjMwICAyNy4zOTUgIDwgMmUtMTYgKioqXG5kaWZmaWN1bHR5My4gQ0hBTExFTkdJTkcgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjMwMzAwODggIDAuMTA1MDAwMCAgMTIuNDEwICA8IDJlLTE2ICoqKlxuYXJlYW1hcHBlZCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wNTY1NjQ4ICAwLjAwMjM5NjUgIDIzLjYwMyAgPCAyZS0xNiAqKipcbmdyb3VwICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNDM2NjQ2MyAgMC4wMjAxMTU2ICAyMS43MDcgIDwgMmUtMTYgKioqXG53aG9tYXBwZWQyLiBJTlRFUk1FRElBVEUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjQ4MDE0NDMgIDAuMDYyMTMxNyAgLTcuNzI4IDEuMDllLTE0ICoqKlxud2hvbWFwcGVkMy4gQURWQU5DRUQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC45NjEyMTE1ICAwLjAzNTY0NjcgLTI2Ljk2NSAgPCAyZS0xNiAqKipcbmR1cmF0aW9udmFsaWRhdGlvbnBlciAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMDI4MjUyNSAgMC4wMDAzODQxIC03My41NDcgIDwgMmUtMTYgKioqXG5tYXBwZXJfbG9jYXRpb24yLlNhbWVfY291bnRyeSAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjM5Mjc4MjggIDAuMDUwNzczMiAgIDcuNzM2IDEuMDNlLTE0ICoqKlxubWFwcGVyX2xvY2F0aW9uMy5TYW1lX2h1YiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC41NTMwNDYyICAwLjA1NTEyMTAgIDEwLjAzMyAgPCAyZS0xNiAqKipcbm1hcHBlcl9sb2NhdGlvbjQuRGlmZmVyZW50X2h1YiAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMjc3OTEwNCAgMC4wMzE5OTI5ICAtOC42ODcgIDwgMmUtMTYgKioqXG53aG9tYXBwZWQyLiBJTlRFUk1FRElBVEU6bWFwcGVyX2xvY2F0aW9uMi5TYW1lX2NvdW50cnkgIC0wLjY0MzE2MTAgIDAuMTI1NzYzNiAgLTUuMTE0IDMuMTVlLTA3ICoqKlxud2hvbWFwcGVkMy4gQURWQU5DRUQ6bWFwcGVyX2xvY2F0aW9uMi5TYW1lX2NvdW50cnkgICAgICAtMC4zMTUwMjY5ICAwLjA2NzEyNDMgIC00LjY5MyAyLjY5ZS0wNiAqKipcbndob21hcHBlZDIuIElOVEVSTUVESUFURTptYXBwZXJfbG9jYXRpb24zLlNhbWVfaHViICAgICAgLTAuMzI1NTE4NiAgMC4xMjMxNTYyICAtMi42NDMgIDAuMDA4MjEgKiogXG53aG9tYXBwZWQzLiBBRFZBTkNFRDptYXBwZXJfbG9jYXRpb24zLlNhbWVfaHViICAgICAgICAgIC0wLjQxNjY1OTIgIDAuMDczNTAyOSAgLTUuNjY5IDEuNDRlLTA4ICoqKlxud2hvbWFwcGVkMi4gSU5URVJNRURJQVRFOm1hcHBlcl9sb2NhdGlvbjQuRGlmZmVyZW50X2h1YiAgMC4wNDU1Mzk0ICAwLjA5NTk2NTAgICAwLjQ3NSAgMC42MzUxMSAgICBcbndob21hcHBlZDMuIEFEVkFOQ0VEOm1hcHBlcl9sb2NhdGlvbjQuRGlmZmVyZW50X2h1YiAgICAgLTAuMzI5MzM3OCAgMC4wNTMxNjI5ICAtNi4xOTUgNS44M2UtMTAgKioqXG4tLS1cblNpZ25pZi4gY29kZXM6ICAwIOKAmCoqKuKAmSAwLjAwMSDigJgqKuKAmSAwLjAxIOKAmCrigJkgMC4wNSDigJgu4oCZIDAuMSDigJgg4oCZIDFcblxuKERpc3BlcnNpb24gcGFyYW1ldGVyIGZvciBiaW5vbWlhbCBmYW1pbHkgdGFrZW4gdG8gYmUgMSlcblxuICAgIE51bGwgZGV2aWFuY2U6IDEwMzI5MSAgb24gMjgxNjUxICBkZWdyZWVzIG9mIGZyZWVkb21cblJlc2lkdWFsIGRldmlhbmNlOiAgODUyMTYgIG9uIDI4MTYzMiAgZGVncmVlcyBvZiBmcmVlZG9tXG5BSUM6IDg1MjU2XG5cbk51bWJlciBvZiBGaXNoZXIgU2NvcmluZyBpdGVyYXRpb25zOiA3XG4ifQ== -->
+<pre><code>
+Call:
+glm(formula = invalidated ~ priority + difficulty + areamapped + 
+    group + whomapped + durationvalidationper + mapper_location + 
+    mapper_location * whomapped, family = &quot;binomial&quot;, data = event_log_df)
+
+Coefficients:
+                                                          Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                                             -2.3434782  0.0283334 -82.711  &lt; 2e-16 ***
+priority2. MEDIUM                                        0.2064121  0.0248076   8.321  &lt; 2e-16 ***
+priority3. HIGH                                          0.4443386  0.0296080  15.007  &lt; 2e-16 ***
+priority4. URGENT                                        1.1572774  0.0289048  40.037  &lt; 2e-16 ***
+difficulty2. MODERATE                                    0.6537139  0.0238630  27.395  &lt; 2e-16 ***
+difficulty3. CHALLENGING                                 1.3030088  0.1050000  12.410  &lt; 2e-16 ***
+areamapped                                               0.0565648  0.0023965  23.603  &lt; 2e-16 ***
+group                                                    0.4366463  0.0201156  21.707  &lt; 2e-16 ***
+whomapped2. INTERMEDIATE                                -0.4801443  0.0621317  -7.728 1.09e-14 ***
+whomapped3. ADVANCED                                    -0.9612115  0.0356467 -26.965  &lt; 2e-16 ***
+durationvalidationper                                   -0.0282525  0.0003841 -73.547  &lt; 2e-16 ***
+mapper_location2.Same_country                            0.3927828  0.0507732   7.736 1.03e-14 ***
+mapper_location3.Same_hub                                0.5530462  0.0551210  10.033  &lt; 2e-16 ***
+mapper_location4.Different_hub                          -0.2779104  0.0319929  -8.687  &lt; 2e-16 ***
+whomapped2. INTERMEDIATE:mapper_location2.Same_country  -0.6431610  0.1257636  -5.114 3.15e-07 ***
+whomapped3. ADVANCED:mapper_location2.Same_country      -0.3150269  0.0671243  -4.693 2.69e-06 ***
+whomapped2. INTERMEDIATE:mapper_location3.Same_hub      -0.3255186  0.1231562  -2.643  0.00821 ** 
+whomapped3. ADVANCED:mapper_location3.Same_hub          -0.4166592  0.0735029  -5.669 1.44e-08 ***
+whomapped2. INTERMEDIATE:mapper_location4.Different_hub  0.0455394  0.0959650   0.475  0.63511    
+whomapped3. ADVANCED:mapper_location4.Different_hub     -0.3293378  0.0531629  -6.195 5.83e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 103291  on 281651  degrees of freedom
+Residual deviance:  85216  on 281632  degrees of freedom
+AIC: 85256
+
+Number of Fisher Scoring iterations: 7</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogInJlZ3Jlc3Npb24iDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLg0KDQpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4NCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg0KDQoNCmBgYHtyfQ0KbGlicmFyeShhb2QpDQpsaWJyYXJ5KGdncGxvdDIpDQpgYGANCg0KIyBSZWFkIGV2ZW50IGRhdGENCmBgYHtyfQ0KZXZlbnRfbG9nX2RmIDwtIHJlYWQuY3N2KCJyZWdyZXNzaW9uLmNzdiIsIHN0cmluZ3NBc0ZhY3RvcnMgPSBGQUxTRSwgc2VwID0gIiwiKQ0KaGVhZChldmVudF9sb2dfZGYpDQpgYGANCg0KIyBFeGVjdXRlIGxvZ2lzaWMgcmVncmVzc2lvbiBnbWwgYmlub21pYWwNCmBgYHtyfQ0KZXZlbnRfbG9nX2RmJHByaW9yaXR5IDwtIGZhY3RvcihldmVudF9sb2dfZGYkcHJpb3JpdHkpDQpldmVudF9sb2dfZGYkZGlmZmljdWx0eSA8LSBmYWN0b3IoZXZlbnRfbG9nX2RmJGRpZmZpY3VsdHkpDQpldmVudF9sb2dfZGYkd2hvbWFwcGVkIDwtIGZhY3RvcihldmVudF9sb2dfZGYkd2hvbWFwcGVkKQ0KbXlsb2dpdCA8LSBnbG0oaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIsIGRhdGEgPSBldmVudF9sb2dfZGYsIGZhbWlseSA9ICJiaW5vbWlhbCIpDQpgYGANCg0KYGBge3J9DQpzdW1tYXJ5KG15bG9naXQpDQpgYGANCiMgRXhlY3V0ZSBsb2dpc2ljIHJlZ3Jlc3Npb24gZ21sc3MgQkkNCmBgYHtyfQ0KbGlicmFyeShnYW1sc3MpDQptb2RlbCA8LSBnYW1sc3MoaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIsIGRhdGEgPSBldmVudF9sb2dfZGYsIGZhbWlseSA9IEJJKCkpDQpzdW1tYXJ5KG1vZGVsKQ0KYGBgDQoNCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogInJlZ3Jlc3Npb24iDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLg0KDQpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4NCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg0KDQoNCmBgYHtyfQ0KbGlicmFyeShhb2QpDQpsaWJyYXJ5KGdncGxvdDIpDQpgYGANCg0KIyBSZWFkIGV2ZW50IGRhdGENCmBgYHtyfQ0KZXZlbnRfbG9nX2RmIDwtIHJlYWQuY3N2KCJyZWdyZXNzaW9uLmNzdiIsIHN0cmluZ3NBc0ZhY3RvcnMgPSBGQUxTRSwgc2VwID0gIiwiKQ0KaGVhZChldmVudF9sb2dfZGYpDQpgYGANCg0KIyBFeGVjdXRlIGxvZ2lzaWMgcmVncmVzc2lvbiBnbWwgYmlub21pYWwNCmBgYHtyfQ0KZXZlbnRfbG9nX2RmJHByaW9yaXR5IDwtIGZhY3RvcihldmVudF9sb2dfZGYkcHJpb3JpdHkpDQpldmVudF9sb2dfZGYkZGlmZmljdWx0eSA8LSBmYWN0b3IoZXZlbnRfbG9nX2RmJGRpZmZpY3VsdHkpDQpldmVudF9sb2dfZGYkd2hvbWFwcGVkIDwtIGZhY3RvcihldmVudF9sb2dfZGYkd2hvbWFwcGVkKQ0KbXlsb2dpdCA8LSBnbG0oaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIgKyBtYXBwZXJfbG9jYXRpb24sIGRhdGEgPSBldmVudF9sb2dfZGYsIGZhbWlseSA9ICJiaW5vbWlhbCIpDQpgYGANCg0KYGBge3J9DQpzdW1tYXJ5KG15bG9naXQpDQpgYGANCiMgRXhlY3V0ZSBsb2dpc2ljIHJlZ3Jlc3Npb24gZ21sc3MgQkkNCmBgYHtyfQ0KbGlicmFyeShnYW1sc3MpDQptb2RlbCA8LSBnYW1sc3MoaW52YWxpZGF0ZWQgfiBwcmlvcml0eSArIGRpZmZpY3VsdHkgKyBhcmVhbWFwcGVkICsgZ3JvdXAgKyB3aG9tYXBwZWQgKyBkdXJhdGlvbnZhbGlkYXRpb25wZXIrIG1hcHBlcl9sb2NhdGlvbiwgZGF0YSA9IGV2ZW50X2xvZ19kZiwgZmFtaWx5ID0gQkkoKSkNCnN1bW1hcnkobW9kZWwpDQpgYGANCg0KDQojIEV4ZWN1dGUgbG9naXNpYyByZWdyZXNzaW9uIGdtbCBiaW5vbWlhbA0KYGBge3J9DQpldmVudF9sb2dfZGYkcHJpb3JpdHkgPC0gZmFjdG9yKGV2ZW50X2xvZ19kZiRwcmlvcml0eSkNCmV2ZW50X2xvZ19kZiRkaWZmaWN1bHR5IDwtIGZhY3RvcihldmVudF9sb2dfZGYkZGlmZmljdWx0eSkNCmV2ZW50X2xvZ19kZiR3aG9tYXBwZWQgPC0gZmFjdG9yKGV2ZW50X2xvZ19kZiR3aG9tYXBwZWQpDQpteWxvZ2l0IDwtIGdsbShpbnZhbGlkYXRlZCB+IHByaW9yaXR5ICsgZGlmZmljdWx0eSArIGFyZWFtYXBwZWQgKyBncm91cCArIHdob21hcHBlZCArIGR1cmF0aW9udmFsaWRhdGlvbnBlciArIG1hcHBlcl9sb2NhdGlvbiArIG1hcHBlcl9sb2NhdGlvbip3aG9tYXBwZWQsIGRhdGEgPSBldmVudF9sb2dfZGYsIGZhbWlseSA9ICJiaW5vbWlhbCIpDQpgYGANCg0KYGBge3J9DQpzdW1tYXJ5KG15bG9naXQpDQpgYGANCg==</div>
 
 
 
